@@ -27,7 +27,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: space-between;
-    margin-top: 10vh;
+    margin-top: 10dvh;
     height: auto;
     max-width: 90%;
     flex-direction: column;
@@ -36,10 +36,10 @@ body{
 }
 
 .heart{
-    width: 13vh;
-    height: 13vh;
+    width: 13dvh;
+    height: 13dvh;
     position: relative;
-    margin: 0vh auto 1vh auto;
+    margin: 0dvh auto 1dvh auto;
     animation: heartMove 4s ease-in-out infinite;
 }
 
@@ -52,21 +52,21 @@ h1{
 }
 
 .bea{
-    margin-bottom: -1vh;
+    margin-bottom: -1dvh;
     font-weight: 600;
     font-size: 3.5rem;
 }
 
 .line{
     width: 70%;
-    margin: 1vh auto;
+    margin: 1dvh auto;
 }
 
 .chill{
     font-size: 1.1rem;
     font-style: italic;
     color: #3C395E;
-    margin-top: 4vh;
+    margin-top: 4dvh;
     padding: 0px;
     font-weight: 400;
 }
@@ -79,11 +79,11 @@ h1{
 
 .tp p{
     display: inline;
-    margin: 0px 1vh;
+    margin: 0px 1dvh;
 }
 
 .btn {
-  padding: 3vh;
+  padding: 3dvh;
   width: 80%;
   margin: 0 auto;
   border: none;
@@ -110,7 +110,7 @@ background-image:
 
 
 .btncontainer{
-    margin-top: 13vh;
+    margin-top: 13dvh;
 }
 
 
@@ -118,10 +118,10 @@ background-image:
 nav{
     background-color: #ffffff;
     width: 100%;
-    height: 14vh;
+    height: 14dvh;
     bottom: 0px;
     position: absolute;
-    border-radius: 4vh 4vh 0 0;
+    border-radius: 4dvh 4dvh 0 0;
     z-index: 2;
 }
 
@@ -133,7 +133,7 @@ nav{
 .wave1, .wave2, .wave3{
     width: 110%;
     display: block;
-    bottom: 10vh; 
+    bottom: 10dvh; 
     left: 0;
     position: absolute;
     filter: blur(1px);
