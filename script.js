@@ -25,3 +25,7 @@ buttons.forEach(btn => {
   });
   btn.addEventListener('touchend', cancel);
 });
+
+window.addEventListener('resize', (e) => {
+    e.stopImmediatePropagation();
+});
