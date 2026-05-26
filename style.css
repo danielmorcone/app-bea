@@ -17,7 +17,7 @@ body {
     overflow: hidden;
     touch-action: none;
     overscroll-behavior: none;
-    position: relative; /* ← serve per waves e nav */
+    position: relative;
     background-image: linear-gradient(to bottom, #ffffff, #FFD4EE);
     display: flex;
     align-items: center;
