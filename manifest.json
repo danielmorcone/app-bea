@@ -2,7 +2,7 @@
   "name": "App Bea",
   "short_name": "Bea",
   "start_url": "/app-bea/",
-  "display": "fullscreen",
+  "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#cf6aa2",
   "icons": [
