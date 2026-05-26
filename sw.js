@@ -1,6 +1,6 @@
 self.addEventListener('install', e => {
     e.waitUntil(
-        caches.open('app-v3').then(cache => cache.addAll([
+        caches.open('app-v4').then(cache => cache.addAll([
             '/app-bea/',
             '/app-bea/index.html',
             '/app-bea/calma.html',
@@ -22,7 +22,7 @@ self.addEventListener('install', e => {
 self.addEventListener('activate', e => {
     e.waitUntil(
         caches.keys().then(keys =>
-            Promise.all(keys.filter(k => k !== 'app-v3').map(k => caches.delete(k)))
+            Promise.all(keys.filter(k => k !== 'app-v4').map(k => caches.delete(k)))
         )
     );
 });
