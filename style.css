@@ -133,7 +133,6 @@ nav{
     width: 100%;          /* ← era 110%, causava scroll orizzontale */
     overflow: hidden;
     position: absolute;   /* ← deve essere absolute come i figli */
-     height: 30dvh;
     bottom: 14dvh;        /* ← stai sopra la nav */
     left: 0;
     z-index: 1;
@@ -142,7 +141,7 @@ nav{
 .wave1, .wave2, .wave3 {
     width: 110%;          /* le singole wave possono essere più larghe */
     display: block;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     filter: blur(1px);
