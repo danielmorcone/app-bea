@@ -135,6 +135,7 @@ nav{
     height: 50%;
     overflow: hidden;
     pointer-events: none;
+    bottom: 8dvh;
 }
 
 .wave1, .wave2, .wave3 {
