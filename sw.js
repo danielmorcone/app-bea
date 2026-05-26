@@ -16,3 +16,17 @@ self.addEventListener('fetch', e => {
         caches.match(e.request).then(r => r || fetch(e.request))
     );
 });
+
+caches.open('app-v1').then(cache => cache.addAll([
+    '/app-bea/',
+    '/app-bea/index.html',
+    '/app-bea/calma.html',
+    '/app-bea/style.css',
+    '/app-bea/script.js',
+    '/app-bea/wave1.png',
+    '/app-bea/wave2.png',
+    '/app-bea/wave3.png',
+    '/app-bea/line.png',
+    '/app-bea/cuore.png',
+    '/app-bea/manifest.json',
+]))
