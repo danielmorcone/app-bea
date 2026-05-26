@@ -4,7 +4,7 @@
   "start_url": "/app-bea/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#cf6aa2",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "icona.png",
