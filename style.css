@@ -141,7 +141,7 @@ nav{
 .wave1, .wave2, .wave3 {
     width: 110%;          /* le singole wave possono essere più larghe */
     display: block;
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     filter: blur(1px);
