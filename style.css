@@ -136,7 +136,7 @@ nav{
     bottom: 14dvh;        /* ← stai sopra la nav */
     left: 0;
     z-index: 1;
-    height: auto; /* regola finché non si vede bene */
+    height: 100%; /* regola finché non si vede bene */
     pointer-events: none;
 }
 
