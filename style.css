@@ -130,18 +130,24 @@ nav{
 }
 
 .waves {
-    width: 100%;          /* ← era 110%, causava scroll orizzontale */
+    position: absolute;
+    bottom: 14dvh;      /* stai sopra la nav */
+    left: 0;
+    width: 100%;
+    height: 20dvh;      /* altezza del contenitore */
     overflow: hidden;
-    position: absolute;   /* ← deve essere absolute come i figli */
+    pointer-events: none;
+    z-index: 1;
 }
 
 .wave1, .wave2, .wave3 {
-    width: 110%;          /* le singole wave possono essere più larghe */
-    display: block;
+    width: 110%;
+    height: 100%;       /* riempiono il contenitore */
     position: absolute;
     bottom: 0;
     left: 0;
     filter: blur(1px);
+    object-fit: cover;  /* l'immagine si adatta senza deformarsi */
 }
 
 .wave1{
