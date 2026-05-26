@@ -136,6 +136,8 @@ nav{
     bottom: 14dvh;        /* ← stai sopra la nav */
     left: 0;
     z-index: 1;
+    height: 40dvh; /* regola finché non si vede bene */
+    pointer-events: none;
 }
 
 .wave1, .wave2, .wave3 {
