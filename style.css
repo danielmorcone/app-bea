@@ -7,20 +7,23 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html, body {
-    height: 100%;
+html {
+    height: 100dvh;
+    overflow: hidden;
+}
+
+body {
+    height: 100dvh;
     overflow: hidden;
     touch-action: none;
     overscroll-behavior: none;
-}
-
-body{
+    position: relative; /* ← serve per waves e nav */
     background-image: linear-gradient(to bottom, #ffffff, #FFD4EE);
     display: flex;
     align-items: center;
     flex-direction: column;
     user-select: none;
-  -webkit-user-select: none;
+    -webkit-user-select: none;
 }
 
 .main{
@@ -30,6 +33,7 @@ body{
     margin-top: 10dvh;
     height: auto;
     max-width: 90%;
+    width: 90%; 
     flex-direction: column;
     text-align: center;
     z-index: 1;
@@ -125,17 +129,21 @@ nav{
     z-index: 2;
 }
 
-.waves{
-    width: 110%;
+.waves {
+    width: 100%;          /* ← era 110%, causava scroll orizzontale */
     overflow: hidden;
+    position: absolute;   /* ← deve essere absolute come i figli */
+    bottom: 14dvh;        /* ← stai sopra la nav */
+    left: 0;
+    z-index: 1;
 }
 
-.wave1, .wave2, .wave3{
-    width: 110%;
+.wave1, .wave2, .wave3 {
+    width: 110%;          /* le singole wave possono essere più larghe */
     display: block;
-    bottom: 10dvh; 
-    left: 0;
     position: absolute;
+    bottom: 0;
+    left: 0;
     filter: blur(1px);
 }
 
