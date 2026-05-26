@@ -19,7 +19,7 @@ body {
     touch-action: none;
     overscroll-behavior: none;
     position: relative;
-    background-image: linear-gradient(to bottom, #ffffff, #FFD4EE);
+    background-image: linear-gradient(to bottom, #ffffff 25%, #FFD4EE 100%);
     display: flex;
     align-items: center;
     flex-direction: column;
