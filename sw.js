@@ -17,7 +17,7 @@ self.addEventListener('fetch', e => {
     );
 });
 
-caches.open('app-v1').then(cache => cache.addAll([
+caches.open('app-v2').then(cache => cache.addAll([
     '/app-bea/',
     '/app-bea/index.html',
     '/app-bea/calma.html',
