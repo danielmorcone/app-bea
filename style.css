@@ -25,6 +25,7 @@ body {
     flex-direction: column;
     user-select: none;
     -webkit-user-select: none;
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 .main{
@@ -123,7 +124,8 @@ background-image:
 nav{
     background-color: #ffffff;
     width: 100%;
-    height: 14dvh;
+    padding-bottom: env(safe-area-inset-bottom);
+    height: calc(14dvh + env(safe-area-inset-bottom));
     bottom: 0px;
     position: absolute;
     border-radius: 4dvh 4dvh 0 0;
