@@ -8,8 +8,8 @@
 }
 
 html {
-    height: 100vh;
-    min-height: 100vh;
+    height: 100dvh;
+    min-height: 100dvh;
     overflow: hidden;
 }
 
@@ -42,8 +42,8 @@ body {
 }
 
 .heart{
-    width: 13dvh;
-    height: 13dvh;
+    min-width: 13dvh;
+    min-height: 13dvh;
     position: relative;
     margin: 0dvh auto 1dvh auto;
     animation: heartMove 4s ease-in-out infinite;
