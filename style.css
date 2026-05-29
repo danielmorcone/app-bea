@@ -37,7 +37,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: space-between;
-    margin-top: calc(10dvh + env(safe-area-inset-top));
+    margin-top: calc(6dvh + env(safe-area-inset-top));
     height: auto;
     max-width: 90%;
     width: 90%; 
@@ -129,7 +129,7 @@ background-image:
 nav{
     background-color: #ffffff;
     width: 100%;
-    height: calc(8dvh + env(safe-area-inset-bottom));
+    height: calc(5dvh + env(safe-area-inset-bottom));
     padding-bottom: env(safe-area-inset-bottom);
     bottom: 0px;
     position: absolute;
