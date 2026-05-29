@@ -129,8 +129,8 @@ background-image:
 nav{
     background-color: #ffffff;
     width: 100%;
+    height: calc(10dvh + env(safe-area-inset-bottom));
     padding-bottom: env(safe-area-inset-bottom);
-    height: calc(14dvh + env(safe-area-inset-bottom));
     bottom: 0px;
     position: absolute;
     border-radius: 4dvh 4dvh 0 0;
