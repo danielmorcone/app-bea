@@ -29,3 +29,11 @@ buttons.forEach(btn => {
 window.addEventListener('resize', (e) => {
     e.stopImmediatePropagation();
 });
+
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    deferredPrompt.prompt();
+});
