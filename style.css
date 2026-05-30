@@ -33,7 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: space-between;
-    margin-top: calc(6dvh + env(safe-area-inset-top));
+    margin-top: calc(8dvh + env(safe-area-inset-top));
     height: auto;
     max-width: 90%;
     width: 90%; 
