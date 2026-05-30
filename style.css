@@ -74,12 +74,12 @@ h1{
 }
 
 .chill{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-style: italic;
     color: #3C395E;
     margin-top: 4dvh;
     padding: 0px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
  span{
@@ -143,7 +143,7 @@ nav{
     height: 50%;
     overflow: hidden;
     pointer-events: none;
-    bottom: 3dvh;
+    bottom: 2dvh;
 }
 
 .wave1, .wave2, .wave3 {
