@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="App Bea">
+
+<!-- icona che appare sulla home screen -->
+<link rel="apple-touch-icon" href="icona.png">
+
+<!-- collega il manifest -->
+<link rel="manifest" href="manifest.json">
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/app-bea/sw.js');
+  }
+</script>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+
+    
+    <div class="waves">
+        <img src="wave1.png" class="wave1">
+        <img src="wave2.png" class="wave2">
+        <img src="wave3.png" class="wave3">
+    </div>
+
+</body>
+
+</html>
