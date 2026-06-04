@@ -37,3 +37,17 @@ window.addEventListener('beforeinstallprompt', (e) => {
     deferredPrompt = e;
     deferredPrompt.prompt();
 });
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/app-bea/sw.js').then(reg => {
+    reg.addEventListener('updatefound', () => {
+      const newWorker = reg.installing;
+      newWorker.addEventListener('statechange', () => {
+        if (newWorker.state === 'activated') {
+          // Ricarica la pagina automaticamente per mostrare i nuovi file
+          window.location.reload(); 
+        }
+      });
+    });
+  });
+}
