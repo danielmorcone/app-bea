@@ -49,7 +49,7 @@ body::after {
     display: flex;
     justify-content: space-between;
     align-items: space-between;
-    margin-top: 12dvh;
+    margin-top: 10dvh;
     height: auto;
     max-width: 90%;
     width: 90%; 
@@ -144,11 +144,11 @@ background-image:
 nav{
     background-color: #ffffff;
     width: 88%;
-    height: 11%;
+    height: 12%;
     padding-bottom:0;
     bottom: 25px;
     position: absolute;
-    border-radius: 5dvh 5dvh;
+    border-radius: 5dvh;
     z-index: 2;
     display: flex;
     align-items: center;
@@ -158,10 +158,38 @@ nav{
 .nav-glass{
     background-color: #E5B7CF;
     border-radius: 4dvh 4dvh;
-    height: 85%;
-    width: 95%;
+    height: 86%;
+    width: 98%;
     position: absolute;
-    filter: blur(16px);
+    filter: blur(12px);
+}
+
+.btn-nav {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+    justify-items: center;
+}
+
+.noi, .home, .umore{
+    color: #826A77;
+    border-radius: 3.5dvh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 90%;
+}
+
+.btn-nav i{
+    font-size: 32px;
+    margin-bottom: -4px;
 }
 
 .waves {
