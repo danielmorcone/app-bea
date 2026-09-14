@@ -49,7 +49,7 @@ body::after {
     display: flex;
     justify-content: space-between;
     align-items: space-between;
-    margin-top: 10dvh;
+    margin-top: 8dvh;
     height: auto;
     max-width: 90%;
     width: 90%; 
@@ -168,10 +168,8 @@ nav{
     width: 90%;
     height: 80%;
     position: absolute;
-
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
 }
@@ -185,6 +183,32 @@ nav{
     justify-content: center;
     height: 90%;
     width: 90%;
+    z-index: 1;
+    transition: color 0.35s ease, transform 0.35s ease;
+}
+
+.noi.active,
+.home.active,
+.umore.active {
+    color: #D01D7A;
+    transform: scale(1.03);
+}
+
+.selettore {
+    position: absolute;
+
+    width: 36%;
+    height: 92%;
+
+    left: 0;
+
+    background: #FFB7DC;
+    background: radial-gradient(circle, rgba(255, 183, 220, 0.6) 52%, rgba(255, 255, 255, 0.6) 100%);
+    border-radius: 3.8dvh;
+    border: 0.5px solid white;
+    transform-origin: center;
+    transition: transform 0.45s cubic-bezier(.22, 1, .36, 1);
+    z-index: 0;
 }
 
 .btn-nav i{
