@@ -51,3 +51,62 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
+
+
+
+const selettore = document.querySelector('.selettore');
+
+const noi = document.querySelector('.noi');
+const home = document.querySelector('.home');
+const umore = document.querySelector('.umore');
+
+const bottoni = [noi, home, umore];
+
+function seleziona(elemento) {
+
+    bottoni.forEach(bottone => {
+        bottone.classList.remove('active');
+    });
+
+    elemento.classList.add('active');
+
+    // posizione del centro del bottone
+    const centro =
+        elemento.offsetLeft + elemento.offsetWidth / 2;
+
+    // centro della pillola
+    const centroPillola =
+        selettore.offsetWidth / 2;
+
+    const posizione = centro - centroPillola;
+
+    // si sposta e si restringe
+    selettore.style.transform =
+        `translateX(${posizione}px) scaleX(0.78) scaleY(0.68)`;
+
+    // dopo poco torna alla dimensione normale
+    setTimeout(() => {
+        selettore.style.transform =
+            `translateX(${posizione}px) scaleX(1) scaleY(1)`;
+    }, 100);
+}
+
+
+// click
+noi.addEventListener('click', () => {
+    seleziona(noi);
+});
+
+home.addEventListener('click', () => {
+    seleziona(home);
+});
+
+umore.addEventListener('click', () => {
+    seleziona(umore);
+});
+
+
+// parte con HOME
+window.addEventListener('load', () => {
+    seleziona(home);
+});
