@@ -198,13 +198,13 @@ nav{
     position: absolute;
 
     width: 36%;
-    height: 92%;
+    height: 100%;
 
     left: 0;
-
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.096);
     background: #FFB7DC;
     background: radial-gradient(circle, rgba(255, 183, 220, 0.6) 52%, rgba(255, 255, 255, 0.6) 100%);
-    border-radius: 3.8dvh;
+    border-radius: 3.9dvh;
     border: 0.5px solid white;
     transform-origin: center;
     transition: transform 0.45s cubic-bezier(.22, 1, .36, 1);
